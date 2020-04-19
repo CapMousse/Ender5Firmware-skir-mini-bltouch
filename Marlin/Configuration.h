@@ -482,9 +482,9 @@
   #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
-  #define DEFAULT_Kp 22.07
-  #define DEFAULT_Ki 1.57
-  #define DEFAULT_Kd 77.39
+  #define DEFAULT_Kp 29.59
+  #define DEFAULT_Ki 2.09
+  #define DEFAULT_Kd 104.97
 #endif // PIDTEMP
 
 //===========================================================================
@@ -717,7 +717,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 97.89 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -935,7 +935,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 30.128, 0.503, -2.565 }
+#define NOZZLE_TO_PROBE_OFFSET { 30.128, 0.503, -2.4 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
